@@ -1,3 +1,5 @@
+import mug from './assets/mugs.jpg';
+
 function renderMenu () {
   const menuContent = document.createElement('div');
   menuContent.innerHTML = `
