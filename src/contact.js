@@ -15,3 +15,5 @@ function renderContact () {
   `
   return contactContent;
 }
+
+export { renderContact };
