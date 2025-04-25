@@ -1,6 +1,7 @@
 import "./style.css";
 import { renderHome } from "./home.js";
 import { renderContact } from "./contact.js";
+import { renderMenu } from "./menu.js";
 
 window.addEventListener('DOMContentLoaded', () => {
   const contentDiv = document.getElementById("content");
@@ -24,6 +25,15 @@ homeBtn.addEventListener('click', () => {
   contentDiv.innerHTML = "";
   const homeContent = renderHome();
   contentDiv.appendChild(homeContent);
+})
+
+const menuBtn = document.getElementById('menu-btn');
+
+menuBtn.addEventListener('click', () => {
+  const contentDiv = document.getElementById("content");
+  contentDiv.innerHTML = "";
+  const menuContent = renderMenu();
+  contentDiv.appendChild(menuContent);
 })
 
 console.log("it works!");
