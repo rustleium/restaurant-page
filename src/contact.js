@@ -1,3 +1,5 @@
+import mailBox from './assets/mail.jpg';
+
 function renderContact () {
   const contactContent = document.createElement('div');
   contactContent.innerHTML = `
@@ -8,7 +10,7 @@ function renderContact () {
       <li>📍 Location: Nowhere near you think.</li>
       <li>📞 Phone: No. Just no.</li>
     </ul>
-    <img class="image" id="image-contact" src="" alt="mailbox">
+    <img class="image" id="image-contact" src="${mailBox}" alt="mailbox">
 
   `
   return contactContent;
