@@ -17,4 +17,13 @@ contactBtn.addEventListener('click', () => {
   contentDiv.appendChild(contactContent);
 })
 
+const homeBtn = document.getElementById('home-btn');
+
+homeBtn.addEventListener('click', () => {
+  const contentDiv = document.getElementById("content");
+  contentDiv.innerHTML = "";
+  const homeContent = renderHome();
+  contentDiv.appendChild(homeContent);
+})
+
 console.log("it works!");
